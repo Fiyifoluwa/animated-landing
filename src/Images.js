@@ -8,11 +8,16 @@ function Images({ timeline, ease }) {
 
   useEffect(() => {
     timeline
-      .from(image1, 1.2, {
-        y: 1200,
-        ease: ease,
-        opacity: 0,
-      })
+      .from(
+        image1,
+        1.2,
+        {
+          y: 1200,
+          ease: ease,
+          opacity: 0,
+        },
+        '-=1'
+      )
       .from(
         image1,
         2,
@@ -20,15 +25,20 @@ function Images({ timeline, ease }) {
           scale: 1.6,
           ease: ease,
         },
-        '-=1.2'
+        '-=1'
       );
 
     timeline
-      .from(image2, 1.2, {
-        y: 1200,
-        ease: ease,
-        opacity: 0,
-      })
+      .from(
+        image2,
+        1.2,
+        {
+          y: 1200,
+          ease: ease,
+          opacity: 0,
+        },
+        '-=1'
+      )
       .from(
         image2,
         2,
@@ -40,11 +50,16 @@ function Images({ timeline, ease }) {
       );
 
     timeline
-      .from(image3, 1.2, {
-        y: 1200,
-        ease: ease,
-        opacity: 0,
-      })
+      .from(
+        image3,
+        1.2,
+        {
+          y: 1200,
+          ease: ease,
+          opacity: 0,
+        },
+        '-=1'
+      )
       .from(
         image3,
         2,
